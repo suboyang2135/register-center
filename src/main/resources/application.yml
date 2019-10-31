@@ -1,0 +1,18 @@
+server:
+  port: 1010
+
+spring:
+  application:
+    name: register-center
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:1010/eureka/
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+  dashboard:
+    path: /webui
